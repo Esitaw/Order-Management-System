@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management System</title>
+</head>
+<body>
+    <h2>Welcome to Sam's Canteen! Here are the prices.</h2>
+    <h3>All foods in the menu are unli rice, unli soup, and with free softdrinks!</h3>
+    <ul>
+        <li>Pares Overload = 100 PHP</li>
+        <li>Fried Chicken = 120 PHP</li>
+        <li>Beef Tapa = 130 PHP</li>
+    </ul>
+    <form method = "GET" action = "getOrder.php">
+        <label for="order">Select an order:</label>
+        <select id="order" name="order">
+            <option value="pares">Pares Overload</option>
+            <option value="chicken">Fried Chicken</option>
+            <option value="tapa">Beef Tapa</option>
+        </select><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        <label for="cash">Cash Paid:</label>
+        <input type="number" id="cash" name="cash" min="0" required><br><br>
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
